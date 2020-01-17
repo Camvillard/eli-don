@@ -9,7 +9,7 @@ import { HomepageContainer } from "../components/SaveTheDate.ui"
 
 const IndexPage = () => (
   <HomepageContainer>
-    <SEO title="Home" />
+    <SEO title="10.09.20" />
     <GlobalStyles />
     <SaveTheDate />
   </HomepageContainer>

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Made Regular";
+  src: url("../../static/fonts/made-regular.woff2")  format("woff2"),
+        url("../../static/fonts/made-regular.woff")  format("woff");
+} 
+
+@font-face {
+  font-family: "Made Black";
+  src: url("../../static/fonts/made-black.woff2")  format("woff2"),
+        url("../../static/fonts/made-black.woff")  format("woff");
+} 
+
+@font-face {
+  font-family: "Made LIght";
+  src: url("../../static/fonts/made-light.woff2")  format("woff2"),
+        url("../../static/fonts/made-light.woff")  format("woff");
+} 

@@ -4,6 +4,7 @@ import {
   Subtitle,
   SubtitleContainer,
   WeddingDay,
+  WeddingDetails,
   WeddingMonth,
   WeddingName,
   WeddingNames,
@@ -19,9 +20,12 @@ export const SaveTheDate = () => {
           <Subtitle>votre</Subtitle>
           <Subtitle>calendrier</Subtitle>
         </SubtitleContainer>
+
         <WeddingDay>19</WeddingDay>
-        <WeddingMonth>sept</WeddingMonth>
-        <WeddingYear>2020</WeddingYear>
+        <WeddingDetails>
+          <WeddingMonth>sept</WeddingMonth>
+          <WeddingYear>2020</WeddingYear>
+        </WeddingDetails>
 
         <WeddingNames>
           <WeddingName>elizabeth</WeddingName>

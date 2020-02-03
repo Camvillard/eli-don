@@ -10,10 +10,25 @@ export const HomepageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("https://res.cloudinary.com/camvillard/image/upload/v1580763683/eli-don/marble.jpg");
+  background-size: cover;
+`
+
+export const ShadowImage = styled.img`
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80vw;
+  z-index: 800000;
 `
 
 export const SaveTheDateContainer = styled.div`
   background: ${beige};
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
   width: 74vw;
   height: 82vh;
   margin: auto;

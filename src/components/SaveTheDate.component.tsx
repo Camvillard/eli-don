@@ -24,7 +24,7 @@ export const SaveTheDate = () => {
         <WeddingDay>19</WeddingDay>
         <WeddingDetails>
           <WeddingMonth>sept</WeddingMonth>
-          <WeddingYear>2020</WeddingYear>
+          {/* <WeddingYear>2020</WeddingYear> */}
         </WeddingDetails>
 
         <WeddingNames>

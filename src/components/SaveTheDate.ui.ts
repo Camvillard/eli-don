@@ -25,14 +25,15 @@ export const SaveTheDateContainer = styled.div`
   }
 `
 export const SubtitleContainer = styled.div`
+  margin-top: 8px;
   &:after {
     content: "";
     height: 1px;
     width: 20%;
     background: ${darkGray};
     position: absolute;
-    top: 82px;
-    left: 2vw;
+    top: 74px;
+    left: 8px;
   }
   @media (min-width: 768px) {
     position: absolute;
@@ -44,7 +45,7 @@ export const SubtitleContainer = styled.div`
       width: 12vw;
       background: ${darkGray};
       position: absolute;
-      top: 48%;
+      top: 24px;
       left: 90%;
     }
   }
@@ -52,19 +53,19 @@ export const SubtitleContainer = styled.div`
 
 export const Subtitle = styled.h3`
   text-align: left;
-  font-size: 1rem;
-  margin: 0.2rem auto 0.2rem 2vw;
+  font-size: 14px;
+  margin: 0.2rem auto 0.2rem 8px;
 `
 
 export const WeddingDay = styled.h2`
-  font-size: 38vh;
+  font-size: 242px;
   text-align: center;
-  margin: 20px 0 0 0;
+  margin: 56px 0 0 0;
   @media (min-width: 768px) {
     font-size: 42vh;
   }
   @media (min-width: 1024px) {
-    font-size: 42vh;
+    font-size: 124px;
     position: absolute;
     top: -16vh;
     right: 0;
@@ -75,6 +76,9 @@ export const WeddingDay = styled.h2`
 `
 
 export const WeddingDetails = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @media (min-width: 768px) {
     bottom: 0;
     left: 0;
@@ -88,10 +92,22 @@ export const WeddingDetails = styled.div`
 export const WeddingMonth = styled.h2`
   margin: 0 auto;
   margin-top: -56px;
+  margin-left: 33px;
   text-transform: uppercase;
-  font-size: 14vh;
+  font-size: 78px;
   position: relative;
   text-align: center;
+  display: inline;
+  &:after {
+    content: "2020";
+    color: ${darkGray};
+    position: absolute;
+    top: 14px;
+    font-size: 28px;
+    right: 0;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+  }
   @media (min-width: 768px) {
     margin: 0;
     position: absolute;
@@ -126,12 +142,13 @@ export const WeddingYear = styled.h4`
 export const WeddingNames = styled.div`
   position: absolute;
   right: 0;
-  bottom: 1vh;
+  bottom: 8px;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-around;
   @media (min-width: 768px) {
+    flex-direction: column;
     bottom: 4vh;
     right: 3vw;
     text-align: center;
@@ -139,7 +156,7 @@ export const WeddingNames = styled.div`
 `
 
 export const WeddingName = styled.h3`
-  font-size: 0.8rem;
+  font-size: 12px;
   text-align: center;
   margin: 0 auto;
   @media (min-width: 768px) {

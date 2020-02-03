@@ -24,6 +24,14 @@ export const ShadowImage = styled.img`
   right: 0;
   width: 80vw;
   z-index: 800000;
+  @media (min-width: 768px) {
+    top: -12px;
+    width: 90vw;
+  }
+  @media (min-width: 1024px) {
+    top: -122px;
+    width: 90vw;
+  }
 `
 
 export const SaveTheDateContainer = styled.div`

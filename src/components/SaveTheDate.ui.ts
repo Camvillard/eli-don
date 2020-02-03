@@ -23,6 +23,17 @@ export const SaveTheDateContainer = styled.div`
     width: 66vw;
     height: 76vh;
   }
+  @media (min-width: 1024px) {
+    height: 60vh;
+  }
+  @media (min-width: 1280px) {
+    width: 60vw;
+    height: 64vh;
+  }
+  @media (min-width: 1440px) {
+    width: 56vw;
+    height: 32vw;
+  }
 `
 export const SubtitleContainer = styled.div`
   margin-top: 8px;
@@ -37,7 +48,7 @@ export const SubtitleContainer = styled.div`
   }
   @media (min-width: 768px) {
     position: absolute;
-    top: 8vh;
+    top: 4vh;
     left: 3vw;
     &:after {
       content: "";
@@ -62,16 +73,18 @@ export const WeddingDay = styled.h2`
   text-align: center;
   margin: 56px 0 0 0;
   @media (min-width: 768px) {
-    font-size: 42vh;
+    font-size: 420px;
+    margin-top: 100px;
   }
   @media (min-width: 1024px) {
-    font-size: 124px;
+    font-size: 440px;
     position: absolute;
-    top: -16vh;
+    top: -26vh;
     right: 0;
   }
   @media (min-width: 1280px) {
-    font-size: 42vh;
+    font-size: 520px;
+    top: -26vh;
   }
 `
 
@@ -80,12 +93,11 @@ export const WeddingDetails = styled.div`
   align-items: center;
   justify-content: center;
   @media (min-width: 768px) {
-    bottom: 0;
-    left: 0;
-    height: 50%;
+  }
+  @media (min-width: 1024px) {
+    margin-top: -100px;
     position: absolute;
-    width: 72%;
-    display: flex;
+    bottom: 0;
   }
 `
 
@@ -110,20 +122,20 @@ export const WeddingMonth = styled.h2`
   }
   @media (min-width: 768px) {
     margin: 0;
-    position: absolute;
-    left: 0;
-    bottom: -6vh;
     text-transform: uppercase;
-    font-size: 28vh;
+    font-size: 140px;
     &:after {
-      content: "2020";
-      color: ${darkGray};
-      position: absolute;
-      top: 5vh;
-      font-size: 9vh;
-      right: 0;
-      transform: rotate(-90deg);
-      transform-origin: top right;
+      top: 25px;
+      font-size: 46px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 170px;
+      bottom: -34px;
+      &:after {
+        top: 34px;
+        font-size: 54px;
+        right: 4px;
+      }
     }
   }
 `
@@ -149,9 +161,16 @@ export const WeddingNames = styled.div`
   justify-content: space-around;
   @media (min-width: 768px) {
     flex-direction: column;
+    align-items: flex-end;
     bottom: 4vh;
     right: 3vw;
-    text-align: center;
+  }
+  @media (min-width: 1024px) {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    bottom: 4vh;
+    right: 4vw;
   }
 `
 
@@ -160,6 +179,11 @@ export const WeddingName = styled.h3`
   text-align: center;
   margin: 0 auto;
   @media (min-width: 768px) {
-    text-align: center;
+    text-align: right;
+    margin: 0;
+  }
+  @media (min-width: 1024px) {
+    margin: 0;
+    align-items: center;
   }
 `

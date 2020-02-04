@@ -127,11 +127,13 @@ export const WeddingDetails = styled.div`
 
 export const WeddingMonth = styled.h2`
   margin: 0 auto;
-  margin-top: -56px;
-  margin-left: 33px;
+  // margin-top: -56px;
+  // margin-left: 33px;
   text-transform: uppercase;
   font-size: 64px;
   position: relative;
+  top: -40px;
+  left: -12px;
   text-align: center;
   display: inline;
   &:after {

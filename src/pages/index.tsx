@@ -8,7 +8,7 @@ import { Shadow } from "../components/Shadow.component"
 
 const IndexPage = () => (
   <HomepageContainer>
-    <SEO title="10.09.20" />
+    <SEO title="19.09.20" />
     <GlobalStyles />
     <Shadow />
     <SaveTheDate />

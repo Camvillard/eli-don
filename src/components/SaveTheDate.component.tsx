@@ -36,7 +36,7 @@ export const SaveTheDate = () => {
       </SaveTheDateContainer>
 
       <MoreInfo>
-        les faire-parts suivront dans quelques semaines !
+        les faire-parts suivront dans au début de l'été !
       </MoreInfo>
     </Fragment>
   )

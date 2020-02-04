@@ -116,6 +116,7 @@ export const WeddingDetails = styled.div`
   align-items: center;
   justify-content: center;
   @media (min-width: 768px) {
+    margin-top: -100px;
   }
   @media (min-width: 1024px) {
     margin-top: -100px;
@@ -129,7 +130,7 @@ export const WeddingMonth = styled.h2`
   margin-top: -56px;
   margin-left: 33px;
   text-transform: uppercase;
-  font-size: 78px;
+  font-size: 64px;
   position: relative;
   text-align: center;
   display: inline;
@@ -137,8 +138,8 @@ export const WeddingMonth = styled.h2`
     content: "2020";
     color: ${darkGray};
     position: absolute;
-    top: 14px;
-    font-size: 28px;
+    top: 12px;
+    font-size: 22px;
     right: 0;
     transform: rotate(-90deg);
     transform-origin: top right;
@@ -208,5 +209,18 @@ export const WeddingName = styled.h3`
   @media (min-width: 1024px) {
     margin: 0;
     align-items: center;
+  }
+`
+
+export const MoreInfo = styled.p`
+  font-size: 12px;
+  font-family: Made Black;
+  position: fixed;
+  bottom: 8px;
+  width: 80%;
+  text-align: center;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    bottom: 4vh;
   }
 `

@@ -9,6 +9,7 @@ import {
   WeddingName,
   WeddingNames,
   WeddingYear,
+  MoreInfo,
 } from "./SaveTheDate.ui"
 
 export const SaveTheDate = () => {
@@ -33,6 +34,10 @@ export const SaveTheDate = () => {
           <WeddingName>Donevan</WeddingName>
         </WeddingNames>
       </SaveTheDateContainer>
+
+      <MoreInfo>
+        les faire-parts suivront dans quelques semaines !
+      </MoreInfo>
     </Fragment>
   )
 }

@@ -1,6 +1,4 @@
 import React, { Fragment } from "react"
-import { Link } from "gatsby"
-import Layout from "../components/Layout.component"
 import SEO from "../components/Seo.component"
 import { GlobalStyles } from "../components/GlobalStyles.component"
 import { SaveTheDate } from "../components/SaveTheDate.component"

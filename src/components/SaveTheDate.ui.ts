@@ -8,6 +8,7 @@ export const HomepageContainer = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: linear-gradient(
@@ -217,9 +218,9 @@ export const WeddingName = styled.h3`
 export const MoreInfo = styled.p`
   font-size: 12px;
   font-family: Made Black;
-  position: fixed;
-  bottom: 8px;
-  width: 80%;
+  // position: fixed;
+  // bottom: 8px;
+  // width: 80%;
   text-align: center;
   @media (min-width: 768px) {
     font-size: 16px;

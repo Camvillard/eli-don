@@ -11,10 +11,13 @@ import {
   WeddingYear,
   MoreInfo,
 } from "./SaveTheDate.ui"
+import { DixNeuf } from "./DixNeuf.component"
+
 
 export const SaveTheDate = () => {
   return (
     <Fragment>
+      
       <SaveTheDateContainer>
         <SubtitleContainer>
           <Subtitle>marquez</Subtitle>
@@ -22,7 +25,10 @@ export const SaveTheDate = () => {
           <Subtitle>calendrier</Subtitle>
         </SubtitleContainer>
 
-        <WeddingDay>19</WeddingDay>
+        <WeddingDay>
+          <DixNeuf/>
+        </WeddingDay>
+
         <WeddingDetails>
           <WeddingMonth>sept</WeddingMonth>
           {/* <WeddingYear>2020</WeddingYear> */}

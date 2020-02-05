@@ -1,8 +1,13 @@
 import React from "react"
 
-export const DixNeuf = () => {
+interface IProps {
+  className?: string;
+
+}
+export const DixNeuf = (props: IProps) => {
   return (
     <svg
+      className={props.className}
       width="40"
       height="35"
       viewBox="0 0 40 35"

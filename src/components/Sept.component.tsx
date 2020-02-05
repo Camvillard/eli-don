@@ -1,8 +1,13 @@
 import React from "react"
 
-export const Sept = () => {
+interface ISeptProps {
+  className?: string;
+}
+
+export const Sept = (props: ISeptProps) => {
   return (
     <svg
+      className={props.className}
       width="113"
       height="38"
       viewBox="0 0 113 38"

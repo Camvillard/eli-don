@@ -41,8 +41,9 @@ export const SaveTheDateContainer = styled.div`
   width: 74vw;
   height: 82vh;
   margin: auto;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   @media (min-width: 768px) {
     width: 66vw;
     height: 76vh;
@@ -61,6 +62,7 @@ export const SaveTheDateContainer = styled.div`
 `
 export const SubtitleContainer = styled.div`
   margin-top: 8px;
+  position: relative;
   &:after {
     content: "";
     height: 1px;
@@ -71,17 +73,16 @@ export const SubtitleContainer = styled.div`
     left: 8px;
   }
   @media (min-width: 768px) {
-    position: absolute;
-    top: 4vh;
-    left: 3vw;
+    margin-top: 4vh;
+    margin-left: 4vw;
     &:after {
       content: "";
       height: 2px;
       width: 12vw;
       background: ${darkGray};
       position: absolute;
-      top: 24px;
-      left: 90%;
+      top: 28px;
+      left: 88px;
     }
   }
 `
@@ -92,22 +93,24 @@ export const Subtitle = styled.h3`
   margin: 0.2rem auto 0.2rem 8px;
 `
 
+export const DetailsContainer = styled.div`
+  @media (min-width: 768px) {
+    margin-top: -107px;
+  }
+`
+
 export const WeddingDay = styled.div`
-  // font-size: 242px;
   width: 100%;
   text-align: center;
   svg {
     height: 28vh;
     width: auto;
   }
-  margin-top: 12vh;
   @media (min-width: 768px) {
-    font-size: 420px;
-    margin-top: 100px;
   }
   @media (min-width: 1024px) {
     font-size: 440px;
-    position: absolute;
+    // position: absolute;
     top: -26vh;
     right: 0;
   }
@@ -118,67 +121,68 @@ export const WeddingDay = styled.div`
 `
 
 export const WeddingDetails = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @media (min-width: 768px) {
-    margin-top: -100px;
-  }
-  @media (min-width: 1024px) {
-    // margin-top: -100px;
-    // position: absolute;
-    // bottom: 0;
-  }
-`
-
-export const WeddingMonth = styled.div`
-  // margin: 0 auto;
   position: relative;
-  text-align: center;
-  display: inline;
-  width: 192px;
-  & > svg {
+  width: 70%;
+  margin: auto;
+
+  .sept {
     height: auto;
-    width: 96%;
+    width: 90%;
     position: absolute;
     top: 0;
     left: 0;
   }
+
+  .deux-mille-vingt {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+    width: 28%;
+    height: auto;
+  }
   @media (min-width: 768px) {
-    margin: 0;
-    @media (min-width: 1024px) {
+    .deux-mille-vingt {
+      top: 4px;
+      right: 24px;
     }
   }
+  @media (min-width: 1024px) {
+  }
 `
 
-export const WeddingYear = styled.span`
-  position: absolute;
-  top: 3px;
-  right: 0;
-  transform: rotate(-90deg);
-  transform-origin: top right;
-  svg {
-    height: auto;
-    width: 54px;
-  }
-  @media (min-width: 768px) {
-    display: none;
-  }
-`
+// export const WeddingMonth = styled.div`
+//   // margin: 0 auto;
+//   position: relative;
+//   text-align: center;
+//   display: inline;
+//   width: 70%;
+//   & > svg {
+//     height: auto;
+//     width: 96%;
+//     top: 0;
+//     left: 0;
+//   }
+//   @media (min-width: 768px) {
+//     margin: 0;
+//     @media (min-width: 1024px) {
+//     }
+//   }
+// `
 
 export const WeddingNames = styled.div`
-  position: absolute;
-  right: 0;
-  bottom: 8px;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-around;
+  margin-left: 2px;
   @media (min-width: 768px) {
     flex-direction: column;
-    align-items: flex-end;
-    bottom: 4vh;
-    right: 3vw;
+    align-items: center;
+    // bottom: 4vh;
+    // right: 3vw;
+    margin-bottom: 3vh;
   }
   @media (min-width: 1024px) {
     width: auto;

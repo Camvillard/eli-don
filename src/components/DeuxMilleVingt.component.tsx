@@ -1,8 +1,13 @@
 import React from "react"
 
-export const DeuxMilleVingt = () => {
+interface  IProps {
+  className?: string;
+}
+
+export const DeuxMilleVingt = (props: IProps) => {
   return (
     <svg
+    className={props.className}
       width="102"
       height="36"
       viewBox="0 0 102 36"

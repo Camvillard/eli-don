@@ -33,6 +33,13 @@ export const ShadowImage = styled.img`
     top: -122px;
     width: 90vw;
   }
+  @media (min-width: 1024px) {
+    top: -82px;
+    width: 56vw;
+  }
+  @media (min-width: 1280px) {
+    width: 60vw;
+  }
 `
 
 export const SaveTheDateContainer = styled.div`
@@ -62,7 +69,6 @@ export const SaveTheDateContainer = styled.div`
   }
   @media (min-width: 1440px) {
     width: 56vw;
-    height: 32vw;
   }
 `
 export const SubtitleContainer = styled.div`
@@ -114,7 +120,6 @@ export const WeddingDay = styled.div`
   @media (min-width: 768px) {
   }
   @media (min-width: 1024px) and (orientation: portrait) {
-    // border: 3px solid red;
   }
   @media (min-width: 1024px) and (orientation: landscape) {
     position: absolute;
@@ -129,11 +134,40 @@ export const WeddingDay = styled.div`
   }
   @media (min-width: 1280px) {
     top: -32px;
+    right: -16px;
     svg {
       width: 62%;
+      max-height: 40vh;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    top: -32px;
+    svg {
+      width: 62%;
+      max-height: 36vh;
     }
   }
 `
+
+// @media(min - width: 768px) {
+//   width: 66vw;
+//   height: 76vh;
+// }
+// @media(min - width: 1024px) and(orientation: portrait) {
+//   height: 68vh;
+// }
+// @media(min - width: 1024px) and(orientation: landscape) {
+//   height: 60vh;
+// }
+// @media(min - width: 1280px) {
+//   width: 60vw;
+//   height: 60vh;
+// }
+// @media(min - width: 1440px) {
+//   width: 56vw;
+//   height: 32vw;
+// }
 
 export const WeddingDetails = styled.div`
   position: relative;
@@ -200,8 +234,12 @@ export const WeddingNames = styled.div`
   @media (min-width: 1024px) and (orientation: landscape) {
     margin-left: calc(100% - 120px);
   }
-
-  @media (min-width: 1280px);
+  @media (min-width: 1024px) {
+    margin-left: calc(100% - 132px);
+  }
+  @media (min-width: 1280px) {
+    margin-left: calc(100% - 150px);
+  }
 `
 
 export const WeddingName = styled.h3`
@@ -215,6 +253,10 @@ export const WeddingName = styled.h3`
   @media (min-width: 1024px) {
     margin: 0;
     align-items: center;
+    font-size: 14px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 16px;
   }
 `
 

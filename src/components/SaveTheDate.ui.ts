@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { themeColors } from "../styles/variables"
 
-const { beige, darkGray } = themeColors
+const { beige, darkGray, darkBlue } = themeColors
 
 export const HomepageContainer = styled.div`
   width: 100vw;
@@ -158,6 +158,13 @@ export const Credit = styled.p`
   position: absolute;
   right: 4px;
   transform-origin: bottom right;
+  svg {
+    margin: 0 2px -2px;
+  }
+  a {
+    text-decoration: none;
+    color: ${darkGray};
+  }
   @media (min-width: 1024px) {
     bottom: 240px;
     font-size: 10px;

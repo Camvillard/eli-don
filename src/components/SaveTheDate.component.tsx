@@ -14,6 +14,7 @@ import {
   Credit,
 } from "./SaveTheDate.ui"
 import { Sept } from "./Sept.component"
+import { Heart } from "./Heart.component"
 
 export const SaveTheDate = () => {
   return (
@@ -45,7 +46,7 @@ export const SaveTheDate = () => {
 
       <MoreInfo>les faire-parts suivront au début de l'été !</MoreInfo>
       <Credit>
-        mini-site réalisé avec amour par{" "}
+        mini-site réalisé avec <Heart /> par{" "}
         <a href="https://www.cdltbisou.com">camille v.</a>{" "}
       </Credit>
     </Fragment>

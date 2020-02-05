@@ -92,10 +92,15 @@ export const Subtitle = styled.h3`
   margin: 0.2rem auto 0.2rem 8px;
 `
 
-export const WeddingDay = styled.h2`
-  font-size: 242px;
+export const WeddingDay = styled.div`
+  // font-size: 242px;
+  width: 100%;
   text-align: center;
-  margin: 56px 0 0 0;
+  svg {
+    height: 28vh;
+    width: auto;
+  }
+  margin-top: 12vh;
   @media (min-width: 768px) {
     font-size: 420px;
     margin-top: 100px;
@@ -120,59 +125,42 @@ export const WeddingDetails = styled.div`
     margin-top: -100px;
   }
   @media (min-width: 1024px) {
-    margin-top: -100px;
-    position: absolute;
-    bottom: 0;
+    // margin-top: -100px;
+    // position: absolute;
+    // bottom: 0;
   }
 `
 
-export const WeddingMonth = styled.h2`
-  margin: 0 auto;
-  // margin-top: -56px;
-  // margin-left: 33px;
-  text-transform: uppercase;
-  font-size: 64px;
+export const WeddingMonth = styled.div`
+  // margin: 0 auto;
   position: relative;
-  top: -40px;
-  left: -12px;
   text-align: center;
   display: inline;
-  &:after {
-    content: "2020";
-    color: ${darkGray};
+  width: 192px;
+  & > svg {
+    height: auto;
+    width: 96%;
     position: absolute;
-    top: 12px;
-    font-size: 22px;
-    right: 0;
-    transform: rotate(-90deg);
-    transform-origin: top right;
+    top: 0;
+    left: 0;
   }
   @media (min-width: 768px) {
     margin: 0;
-    text-transform: uppercase;
-    font-size: 140px;
-    &:after {
-      top: 25px;
-      font-size: 46px;
-    }
     @media (min-width: 1024px) {
-      font-size: 170px;
-      bottom: -34px;
-      &:after {
-        top: 34px;
-        font-size: 54px;
-        right: 4px;
-      }
     }
   }
 `
 
-export const WeddingYear = styled.h4`
-  text-align: right;
-  margin: 0 auto;
-  margin-right: 44px;
-  margin-top: -12px;
-  font-size: 1.4rem;
+export const WeddingYear = styled.span`
+  position: absolute;
+  top: 3px;
+  right: 0;
+  transform: rotate(-90deg);
+  transform-origin: top right;
+  svg {
+    height: auto;
+    width: 54px;
+  }
   @media (min-width: 768px) {
     display: none;
   }
@@ -227,3 +215,44 @@ export const MoreInfo = styled.p`
     bottom: 4vh;
   }
 `
+
+// export const WeddingMonth = styled.h2`
+//   margin: 0 auto;
+//   // margin-top: -56px;
+//   // margin-left: 33px;
+//   text-transform: uppercase;
+//   font-size: 64px;
+//   position: relative;
+//   top: -40px;
+//   left: -12px;
+//   text-align: center;
+//   display: inline;
+//   // &:after {
+//   //   content: "2020";
+//   //   color: ${darkGray};
+//   //   position: absolute;
+//   //   top: 12px;
+//   //   font-size: 22px;
+//   //   right: 0;
+//   //   transform: rotate(-90deg);
+//   //   transform-origin: top right;
+//   // }
+//   @media (min-width: 768px) {
+//     margin: 0;
+//     text-transform: uppercase;
+//     font-size: 140px;
+//     // &:after {
+//     //   top: 25px;
+//     //   font-size: 46px;
+//     // }
+//     @media (min-width: 1024px) {
+//       font-size: 170px;
+//       bottom: -34px;
+//       // &:after {
+//       //   top: 34px;
+//       //   font-size: 54px;
+//       //   right: 4px;
+//       // }
+//     }
+//   }
+// `

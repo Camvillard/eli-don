@@ -1,5 +1,7 @@
 import React, { Fragment } from "react"
+import { DixNeuf } from "./DixNeuf.component"
 import {
+  MoreInfo,
   SaveTheDateContainer,
   Subtitle,
   SubtitleContainer,
@@ -9,15 +11,13 @@ import {
   WeddingName,
   WeddingNames,
   WeddingYear,
-  MoreInfo,
 } from "./SaveTheDate.ui"
-import { DixNeuf } from "./DixNeuf.component"
-
+import { Sept } from "./Sept.component"
+import { DeuxMilleVingt } from "./DeuxMilleVingt.component"
 
 export const SaveTheDate = () => {
   return (
     <Fragment>
-      
       <SaveTheDateContainer>
         <SubtitleContainer>
           <Subtitle>marquez</Subtitle>
@@ -26,12 +26,16 @@ export const SaveTheDate = () => {
         </SubtitleContainer>
 
         <WeddingDay>
-          <DixNeuf/>
+          <DixNeuf />
         </WeddingDay>
 
         <WeddingDetails>
-          <WeddingMonth>sept</WeddingMonth>
-          {/* <WeddingYear>2020</WeddingYear> */}
+          <WeddingMonth>
+            <Sept />
+            <WeddingYear>
+              <DeuxMilleVingt />
+            </WeddingYear>
+          </WeddingMonth>
         </WeddingDetails>
 
         <WeddingNames>
@@ -41,9 +45,7 @@ export const SaveTheDate = () => {
         </WeddingNames>
       </SaveTheDateContainer>
 
-      <MoreInfo>
-        les faire-parts suivront dans au début de l'été !
-      </MoreInfo>
+      <MoreInfo>les faire-parts suivront dans au début de l'été !</MoreInfo>
     </Fragment>
   )
 }

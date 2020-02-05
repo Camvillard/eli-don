@@ -9,7 +9,6 @@ import {
   SubtitleContainer,
   WeddingDay,
   WeddingDetails,
-  WeddingMonth,
   WeddingName,
   WeddingNames,
 } from "./SaveTheDate.ui"
@@ -43,7 +42,7 @@ export const SaveTheDate = () => {
         </WeddingNames>
       </SaveTheDateContainer>
 
-      <MoreInfo>les faire-parts suivront dans au début de l'été !</MoreInfo>
+      <MoreInfo>les faire-parts suivront au début de l'été !</MoreInfo>
     </Fragment>
   )
 }

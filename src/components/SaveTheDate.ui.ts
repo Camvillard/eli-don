@@ -58,7 +58,7 @@ export const SaveTheDateContainer = styled.div`
   }
   @media (min-width: 1280px) {
     width: 60vw;
-    height: 64vh;
+    height: 60vh;
   }
   @media (min-width: 1440px) {
     width: 56vw;
@@ -128,8 +128,10 @@ export const WeddingDay = styled.div`
     }
   }
   @media (min-width: 1280px) {
-    font-size: 520px;
-    top: -26vh;
+    top: -32px;
+    svg {
+      width: 62%;
+    }
   }
 `
 
@@ -172,6 +174,16 @@ export const WeddingDetails = styled.div`
       position: relative;
     }
   }
+
+  @media (min-width: 1280px) {
+    .sept {
+      width: 96%;
+    }
+    .deux-mille-vingt {
+      width: 30%;
+      right: 18px;
+    }
+  }
 `
 
 export const WeddingNames = styled.div`
@@ -188,13 +200,8 @@ export const WeddingNames = styled.div`
   @media (min-width: 1024px) and (orientation: landscape) {
     margin-left: calc(100% - 120px);
   }
-  // @media (min-width: 1024px) and (orientation: portrait) {
-  //   width: auto;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   bottom: 4vh;
-  //   right: 4vw;
-  // }
+
+  @media (min-width: 1280px);
 `
 
 export const WeddingName = styled.h3`
@@ -214,53 +221,12 @@ export const WeddingName = styled.h3`
 export const MoreInfo = styled.p`
   font-size: 12px;
   font-family: Made Black;
-  // position: fixed;
-  // bottom: 8px;
-  // width: 80%;
   text-align: center;
   @media (min-width: 768px) {
     font-size: 16px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 20px;
     bottom: 4vh;
   }
 `
-
-// export const WeddingMonth = styled.h2`
-//   margin: 0 auto;
-//   // margin-top: -56px;
-//   // margin-left: 33px;
-//   text-transform: uppercase;
-//   font-size: 64px;
-//   position: relative;
-//   top: -40px;
-//   left: -12px;
-//   text-align: center;
-//   display: inline;
-//   // &:after {
-//   //   content: "2020";
-//   //   color: ${darkGray};
-//   //   position: absolute;
-//   //   top: 12px;
-//   //   font-size: 22px;
-//   //   right: 0;
-//   //   transform: rotate(-90deg);
-//   //   transform-origin: top right;
-//   // }
-//   @media (min-width: 768px) {
-//     margin: 0;
-//     text-transform: uppercase;
-//     font-size: 140px;
-//     // &:after {
-//     //   top: 25px;
-//     //   font-size: 46px;
-//     // }
-//     @media (min-width: 1024px) {
-//       font-size: 170px;
-//       bottom: -34px;
-//       // &:after {
-//       //   top: 34px;
-//       //   font-size: 54px;
-//       //   right: 4px;
-//       // }
-//     }
-//   }
-// `

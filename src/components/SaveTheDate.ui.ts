@@ -150,24 +150,19 @@ export const WeddingDay = styled.div`
   }
 `
 
-// @media(min - width: 768px) {
-//   width: 66vw;
-//   height: 76vh;
-// }
-// @media(min - width: 1024px) and(orientation: portrait) {
-//   height: 68vh;
-// }
-// @media(min - width: 1024px) and(orientation: landscape) {
-//   height: 60vh;
-// }
-// @media(min - width: 1280px) {
-//   width: 60vw;
-//   height: 60vh;
-// }
-// @media(min - width: 1440px) {
-//   width: 56vw;
-//   height: 32vw;
-// }
+export const Credit = styled.p`
+  margin: 0;
+  font-size: 8px;
+  bottom: 160px;
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 4px;
+  transform-origin: bottom right;
+  @media (min-width: 1024px) {
+    bottom: 240px;
+    font-size: 10px;
+  }
+`
 
 export const WeddingDetails = styled.div`
   position: relative;
@@ -264,6 +259,7 @@ export const MoreInfo = styled.p`
   font-size: 12px;
   font-family: Made Black;
   text-align: center;
+  margin: 0 auto 4vh;
   @media (min-width: 768px) {
     font-size: 16px;
   }

@@ -11,6 +11,7 @@ import {
   WeddingDetails,
   WeddingName,
   WeddingNames,
+  Credit,
 } from "./SaveTheDate.ui"
 import { Sept } from "./Sept.component"
 
@@ -43,6 +44,10 @@ export const SaveTheDate = () => {
       </SaveTheDateContainer>
 
       <MoreInfo>les faire-parts suivront au début de l'été !</MoreInfo>
+      <Credit>
+        mini-site réalisé avec amour par{" "}
+        <a href="https://www.cdltbisou.com">camille v.</a>{" "}
+      </Credit>
     </Fragment>
   )
 }

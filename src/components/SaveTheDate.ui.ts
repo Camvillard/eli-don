@@ -150,27 +150,6 @@ export const WeddingDay = styled.div`
   }
 `
 
-export const Credit = styled.p`
-  margin: 0;
-  font-size: 8px;
-  bottom: 160px;
-  transform: rotate(-90deg);
-  position: absolute;
-  right: 4px;
-  transform-origin: bottom right;
-  svg {
-    margin: 0 2px -2px;
-  }
-  a {
-    text-decoration: none;
-    color: ${darkGray};
-  }
-  @media (min-width: 1024px) {
-    bottom: 240px;
-    font-size: 10px;
-  }
-`
-
 export const WeddingDetails = styled.div`
   position: relative;
   width: 70%;
@@ -228,19 +207,25 @@ export const WeddingNames = styled.div`
   align-items: center;
   justify-content: space-around;
   margin-left: 2px;
+  margin-bottom: 12px;
   @media (min-width: 768px) {
     flex-direction: column;
     align-items: center;
     margin-bottom: 3vh;
   }
+  @media (min-width: 1024px) and (orientation: portrait) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   @media (min-width: 1024px) and (orientation: landscape) {
     margin-left: calc(100% - 120px);
   }
-  @media (min-width: 1024px) {
-    margin-left: calc(100% - 132px);
-  }
+  // @media (min-width: 1024px) {
+  //   margin-left: calc(100% - 132px);
+  // }
   @media (min-width: 1280px) {
-    margin-left: calc(100% - 150px);
+    // margin-left: calc(100% - 150px);
+    margin-left: 80%;
   }
 `
 
@@ -264,14 +249,36 @@ export const WeddingName = styled.h3`
 
 export const MoreInfo = styled.p`
   font-size: 12px;
-  font-family: Made Black;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   margin: 0 auto 4vh;
+  text-transform: uppercase;
   @media (min-width: 768px) {
     font-size: 16px;
   }
   @media (min-width: 1024px) {
-    font-size: 20px;
+    font-size: 16px;
     bottom: 4vh;
+  }
+`
+
+export const Credit = styled.p`
+  margin: 0;
+  font-size: 8px;
+  bottom: 160px;
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 4px;
+  transform-origin: bottom right;
+  svg {
+    margin: 0 2px -2px;
+  }
+  a {
+    text-decoration: none;
+    color: ${darkGray};
+  }
+  @media (min-width: 1024px) {
+    bottom: 184px;
+    font-size: 10px;
   }
 `

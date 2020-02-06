@@ -1,7 +1,9 @@
 import React, { Fragment } from "react"
 import { DeuxMilleVingt } from "./DeuxMilleVingt.component"
 import { DixNeuf } from "./DixNeuf.component"
+import { Heart } from "./Heart.component"
 import {
+  Credit,
   DetailsContainer,
   MoreInfo,
   SaveTheDateContainer,
@@ -11,10 +13,8 @@ import {
   WeddingDetails,
   WeddingName,
   WeddingNames,
-  Credit,
 } from "./SaveTheDate.ui"
 import { Sept } from "./Sept.component"
-import { Heart } from "./Heart.component"
 
 export const SaveTheDate = () => {
   return (

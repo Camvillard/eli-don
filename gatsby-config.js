@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Elizabeth & Donevan`,
-    description: `Elizabeth & Donevan's wedding`,
+    description: `Mariage de Don & Eli`,
     author: `camille villard`,
   },
   plugins: [

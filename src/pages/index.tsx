@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { GlobalStyles } from "../components/GlobalStyles.component"
 import { SaveTheDate } from "../components/SaveTheDate.component"
 import { HomepageContainer } from "../components/SaveTheDate.ui"

@@ -53,7 +53,7 @@ function SEO({ description, lang, meta, title }: any) {
         },
         {
           property: `og:image`,
-          content: `https://res.cloudinary.com/camvillard/image/upload/v1581019795/eli-don/eli-don.jpg`,
+          content: `https://res.cloudinary.com/camvillard/image/upload/v1581090317/eli-don/don-eli-2.jpg`,
         },
         {
           name: `twitter:card`,

@@ -44,7 +44,7 @@ export const SaveTheDate = () => {
         </WeddingNames>
       </SaveTheDateContainer>
 
-      <MoreInfo>les faire-parts suivront au début de l'été !</MoreInfo>
+      <MoreInfo>les faire-part suivront au début de l'été !</MoreInfo>
       <Credit>
         mini-site réalisé avec <Heart /> par{" "}
         <a href="https://www.cdltbisou.com">camille v.</a>{" "}
